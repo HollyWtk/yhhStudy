@@ -1,0 +1,23 @@
+server: 
+  port : 8080
+spring: 
+    datasource: 
+      hikari:
+            idle-timeout: 60000
+            max-lifetime: 120000
+            maximum-pool-size: 100
+      url: jdbc:mysql://49.234.207.166/sql_skr?useUnicode=true&characterEncoding=utf-8&useSSL=false&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.jdbc.Driver
+jenkins: 
+  url: http://49.234.207.166:8081
+  wfapi: /wfapi/describe
+  username: yhh
+  password-or-token: 123456
+  jobxml-template-file: jenkins/jenkinsPipelineJobxml-template.xml
+  back-url-home: http://localhost:8080/jenkins/backUrl
+  #github token : 372a27023d3de5603dfe24b8d319f6edf65791de 
+  # 和测试公用一个
+  credentials-id: ed4aab76-0e0c-41ba-b6dd-efc6c26e5312
+  gitlab-ssh-port: 2222
