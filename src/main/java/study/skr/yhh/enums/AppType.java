@@ -10,7 +10,7 @@ import java.util.stream.Stream;
  * 
  */
 public enum AppType{
-    /** 自研web应用 */
+    /** 自研web应用 */ 
     JAVA_WEB(0, "SpringBoot应用", "jenkins/springboot-jar/pipelineScript-springboot-jar", "/etc/java", "application.yml"),
     /** 自研sdk应用 */
     JAVA_SDK(1, "自研sdk应用", "jenkins/javasdk-jar/pipelineScript-javasdk-jar"),
